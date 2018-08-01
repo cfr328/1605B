@@ -199,6 +199,10 @@ html,
   height: 100%;
 }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
@@ -233,14 +237,17 @@ header input {
   text-align: center;
 }
 
+header input::-webkit-input-placeholder {
+  color: #fff;
+}
+
 section {
   flex: 1;
-  width: 100%;
+  overflow-y: auto;
 }
 
 .banner {
   width: 100%;
-  height: 4rem;
 }
 
 .banner .swiper-slide {
@@ -281,35 +288,77 @@ section {
   color: #fff;
 }
 
-.pic {
+.imgs {
   width: 100%;
-  height: 2.13333rem;
+  height: 1.6rem;
+  display: flex;
 }
 
-.pic .tit {
-  width: 30%;
-  height: 1.06667rem;
-  border: 1px solid #ccc;
+.imgs .tit {
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  font-size: 0.53333rem;
+  margin: 10px 20px;
 }
 
-.pic .title {
+.imgs .title {
   width: 60%;
+  margin-top: 0.26667rem;
+}
+
+.imgs .title p {
+  line-height: 1.5;
+}
+
+.imgs .title p span {
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 .pics {
   width: 100%;
   display: flex;
+  border-top: 0.26667rem solid #eee;
 }
 
-.pics .tip {
-  width: 50%;
+.pics .left {
+  flex: 1;
+  border-left: 1px solid #ccc;
   display: flex;
 }
 
-.pics .tip div {
-  width: 50%;
+.pics .left a {
+  flex: 1;
+  padding: 10px;
 }
 
-.pics .tip div img {
+.pics .left a img {
   width: 100%;
+}
+
+.pics .left dl {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pics .left dl dd {
+  padding: 10px;
+}
+
+.pics .left dl dd h1 {
+  font-size: 0.48rem;
+  color: red;
+}
+
+.pics .left dl dt {
+  width: 100%;
+}
+
+.pics .left dl dt img {
+  width: 80%;
 }
