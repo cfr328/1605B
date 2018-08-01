@@ -1,0 +1,115 @@
+@import 'common.scss';
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+}
+body,
+html,
+.wrap{
+    width: 100%;
+    height: 100%;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+header{
+    width: 100%;
+    height: pxTorem(40px);
+    background: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 pxTorem(10px);
+    a {
+        margin: 0 10px;
+        font-size: pxTorem(20px);
+        color: #fff;
+    }
+    input {
+        width: 100%;
+        height: pxTorem(26px);
+        background: orangered;
+        color: #fff;
+        border-radius: pxTorem(6px);
+        text-align: center;    
+    }
+}
+section {
+    flex: 1;
+    width: 100%;
+    
+}
+.banner {
+    width: 100%;
+    height: pxTorem(150px);
+    .swiper-slide {
+        width: 100%;
+        .pic {
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
+}
+.list {
+    width: 100%;
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li {
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+            i {
+                width: pxTorem(50px);
+                height: pxTorem(50px);
+                background: pink;
+                line-height: pxTorem(50px);
+                text-align: center;
+                border-radius: 50%;
+                font-size: pxTorem(24px);
+                color: #fff;
+            }
+            
+        }
+    }
+}
+.pic {
+    width: 100%;
+    height: pxTorem(80px);
+    .tit {
+        width: 30%;
+        height: pxTorem(40px);
+        border: 1px solid #ccc;
+    }
+    .title {
+        width: 60%;
+    }   
+}
+.pics {
+    width: 100%;
+    display: flex;      
+    .tip {
+        width: 50%;
+        display: flex;
+        div {
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }       
+    }
+}
