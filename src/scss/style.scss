@@ -76,16 +76,11 @@ section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px 0;
-            i {
-                width: pxTorem(50px);
-                height: pxTorem(50px);
-                background: pink;
-                line-height: pxTorem(50px);
-                text-align: center;
-                border-radius: 50%;
-                font-size: pxTorem(24px);
-                color: #fff;
+            margin: 6px 0;
+            a {
+                img {
+                    width: 100%;
+                }
             }
             
         }
@@ -153,5 +148,15 @@ section {
             }
             
         }   
+    }
+}
+.box {
+    width: 100%;
+    height:pxTorem(100px); 
+    display: flex;
+    .lef{
+        img{
+            width: 100%;
+        }
     }
 }
